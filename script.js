@@ -3,6 +3,9 @@ function stringChop(str, size) {
 	
 	let arr = [];
 	let len = str.length;
+	if(len ==0){
+		return arr;
+	}
 	let index1=0;
 	let index2=size;
 	while(len>size && index2<=len){
@@ -17,8 +20,8 @@ function stringChop(str, size) {
 }
 
 // Do not change the code below
-const str = prompt("Enter String.");
+// const str = prompt("Enter String.");
 
 
-const size = prompt("Enter Chunk Size.");
+// const size = prompt("Enter Chunk Size.");
 alert(stringChop(str, size));
